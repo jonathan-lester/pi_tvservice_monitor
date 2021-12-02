@@ -1,0 +1,13 @@
+[Unit]
+Description=Send a refresh command to magic mirror when attached HDMI is powered on
+After=multi-user.target
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=/usr/bin/python3 /home/pi/projects/magicmirror/pi_tvservice_monitor.py -c /home/pi/projects/magicmirror/config.json
+# User=pimonitor
+# Group=users
+
+[Install]
+WantedBy=multi-user.target

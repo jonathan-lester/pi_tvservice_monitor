@@ -1,0 +1,9 @@
+{
+    "onattach": {
+        "update_mmm": "curl --location --request GET 'http://localhost:8080/api/notification/MMM-WINDYV2REFRESH?apiKey=ReplaceWithAPIKey'",
+        "cmd2": "echo 'Second command'"
+    },
+    "ondetach": [
+
+    ]
+}
